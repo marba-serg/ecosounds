@@ -20,6 +20,10 @@ a:hover {
     transition: 0.3s;
 }
 
+ul {
+    list-style: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -167,4 +171,31 @@ body {
     text-decoration: none;
     transition: color 0.5s;
     color: white;
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        padding: 10px 10px;
+    }
+
+    .nav-link {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav-link {
+        margin-right: 10px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .nav-link {
+        margin-right: 10px;
+        font-size: 14px;
+    }
 }
