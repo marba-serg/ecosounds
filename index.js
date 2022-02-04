@@ -3,8 +3,10 @@ const play = document.querySelector('.play');
 const navLink = document.querySelectorAll('.nav-link')
 const navItems = document.querySelector('.nav-items')
 const hero = document.querySelector('.hero')
+const bird = document.querySelector('.bird')
 let isPlay = false;
 let sound = 'forest'
+let nameBird = 'Лес'
 
 //------------- PLAY BUTTON ------------------//
 
@@ -48,6 +50,7 @@ function changeClassActive(event) {
     isPlay = true;
     play.style.backgroundImage = 'url(assets/svg/pause.svg)'
     hero.style.backgroundImage = `url(assets/img/${sound}.jpg)`
+    bird.innerHTML = event.target.innerHTML
 
   }
 
@@ -55,4 +58,5 @@ function changeClassActive(event) {
 
 
 navItems.addEventListener('click', changeClassActive);
+
 
