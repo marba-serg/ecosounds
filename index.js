@@ -4,9 +4,11 @@ const navLink = document.querySelectorAll('.nav-link')
 const navItems = document.querySelector('.nav-items')
 const hero = document.querySelector('.hero')
 const bird = document.querySelector('.bird')
+const douwloadLink = document.querySelector('.download-link')
 let isPlay = false;
 let sound = 'forest'
 let nameBird = 'Лес'
+
 
 //------------- PLAY BUTTON ------------------//
 
@@ -51,6 +53,7 @@ function changeClassActive(event) {
     play.style.backgroundImage = 'url(assets/svg/pause.svg)'
     hero.style.backgroundImage = `url(assets/img/${sound}.jpg)`
     bird.innerHTML = event.target.innerHTML
+    douwloadLink.href = `assets/audio/${sound}.mp3`
 
   }
 
